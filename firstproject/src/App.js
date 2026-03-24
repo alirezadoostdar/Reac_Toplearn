@@ -32,6 +32,7 @@ function App() {
         <div>
           <h2>{User.name}</h2>
           <h3>{User.family}</h3>
+          <h1>test</h1>
         </div>
       ))}
       <header className="App-header">
