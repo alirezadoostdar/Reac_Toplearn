@@ -11,7 +11,8 @@ function App() {
   return (
     <>
       <h1>test</h1>
-      <Greeter />
+      <Greeter person="Alireza" />
+      <Greeter person="Pegah" />
     </>
 
   )
