@@ -14,6 +14,7 @@ function App() {
       <h1>hello</h1>
       <DoubleDice />
       <DoubleDice />
+      <DoubleDice />
     </>
 
   )
