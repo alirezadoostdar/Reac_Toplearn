@@ -4,7 +4,7 @@ function DoubleDice() {
     return (
         <div>
             <h1>result dice</h1>
-            <h1>{num1 === num2 ? "You win!" : ""}</h1>
+            {num1 === num2 && <h2>you win!</h2>}
             <p>num1 : {num1}</p>
             <p>num2 : {num2}</p>
         </div>
