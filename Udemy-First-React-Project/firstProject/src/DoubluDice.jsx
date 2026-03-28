@@ -4,10 +4,10 @@ function DoubleDice() {
     return (
         <div>
             <h1>{num1 === num2 ? "You win!" : "you Lose ;("}</h1>
-            <p>num1 : {mum1}</p>
+            <p>num1 : {num1}</p>
             <p>num2 : {num2}</p>
         </div>
-    )
+    );
 
 }
 
