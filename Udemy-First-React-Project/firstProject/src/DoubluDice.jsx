@@ -1,4 +1,4 @@
-function DoubleDice() {
+function DoubleDice({ color = 'magenta' }) {
     const num1 = Math.floor(Math.random() * 3) + 1
     const num2 = Math.floor(Math.random() * 3) + 1
     const result = num1 === num2
