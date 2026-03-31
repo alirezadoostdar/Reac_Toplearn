@@ -1,7 +1,8 @@
 function ColorList({ colors }) {
+    const element = colors.map(color => <li>{color}</li>)
     return (
         <div>
-            <p>{colors}</p>
+            <ui>{element}</ui>
         </div>
     )
 }
