@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import Greeter from "./Greeter"
 import './App.css'
 import DoubleDice from './DoubluDice'
+import ColorList from './ColorList'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <DoubleDice />
       <DoubleDice />
       <DoubleDice />
+      <ColorList colors={["red", "blue", "brown", "green"]} />
     </>
 
   )
