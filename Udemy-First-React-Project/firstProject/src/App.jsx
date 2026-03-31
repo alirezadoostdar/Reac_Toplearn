@@ -6,12 +6,14 @@ import Greeter from "./Greeter"
 import './App.css'
 import DoubleDice from './DoubluDice'
 import ColorList from './ColorList'
+import Slot from './Slot'
 
 function App() {
 
 
   return (
     <>
+      <Slot val1={"d"} val2={"d"} val3={"d"} />
       <h1>hello</h1>
       <DoubleDice />
       <DoubleDice />
