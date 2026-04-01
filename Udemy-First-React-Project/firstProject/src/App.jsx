@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <Slot val1={"d"} val2={"d"} val3={"d"} />
+      <Slot val1={"d"} val2={"f"} val3={"d"} />
       <h1>hello</h1>
       <DoubleDice />
       <DoubleDice />
