@@ -4,7 +4,7 @@ function ShoppingList({ items }) {
             <ul>
                 {items.map((i) => (
                     <li>
-                        {i.title}
+                        Title : {i.title} - Price : {i.price} - Quantity : {i.quantity}
                     </li>
                 ))}
             </ul>
