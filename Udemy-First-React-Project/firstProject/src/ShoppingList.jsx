@@ -5,7 +5,7 @@ function ShoppingList({ items }) {
         <div>
             <ul>
                 {items.map((i) => (
-                    <li style={
+                    <li key={i.id} style={
                         {
                             color: i.quantity === 0 ? "red" : "green"
                         }

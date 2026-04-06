@@ -11,11 +11,11 @@ import ShoppingList from './ShoppingList'
 
 function App() {
   const items = [
-    { title: "book", quantity: 4, price: 230000 },
-    { title: "laptop", quantity: 10, price: 230000 },
-    { title: "handy", quantity: 0, price: 180000 },
-    { title: "book", quantity: 12, price: 230000 },
-    { title: "poliwer", quantity: 54, price: 450000 },
+    { id: 1, title: "book", quantity: 4, price: 230000 },
+    { id: 2, title: "laptop", quantity: 10, price: 230000 },
+    { id: 3, title: "handy", quantity: 0, price: 180000 },
+    { id: 4, title: "book", quantity: 12, price: 230000 },
+    { id: 5, title: "poliwer", quantity: 54, price: 450000 },
   ]
 
 
