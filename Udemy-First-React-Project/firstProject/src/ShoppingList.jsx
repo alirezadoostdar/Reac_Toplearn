@@ -1,17 +1,14 @@
 import ColorList from "./ColorList"
+import ShoppingListItem from "./ShoppingListItem"
 
 function ShoppingList({ items }) {
     return (
         <div>
             <ul>
                 {items.map((i) => (
-                    <li key={i.id} style={
-                        {
-                            color: i.quantity === 0 ? "red" : "green"
-                        }
-                    }>
-                        Title : {i.title} - Price : {i.price} - Quantity : {i.quantity}
-                    </li>
+                    <ShoppingListItem
+                        key={i.id}
+                        item={i} />
                 ))}
             </ul>
         </div>
