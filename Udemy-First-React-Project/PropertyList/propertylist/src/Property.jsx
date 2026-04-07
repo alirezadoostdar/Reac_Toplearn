@@ -1,4 +1,4 @@
-function Property({ id, name, rating, price }) {
+function Property({ rating, price, name }) {
     return (
         <div>
             <h2>{name}</h2>
