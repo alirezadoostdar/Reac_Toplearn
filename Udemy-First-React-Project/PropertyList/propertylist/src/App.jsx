@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import PropertyList from './PropertyList'
 
 function App() {
   const properties = [
@@ -16,7 +17,8 @@ function App() {
 
   return (
     <>
-
+      <h1>Property List</h1>
+      <PropertyList propertise={properties} />
     </>
   )
 }

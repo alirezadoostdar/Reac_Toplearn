@@ -1,11 +1,12 @@
 import Property from "./Property"
+import "./PropertyList.css"
 
 function PropertyList({ propertise }) {
     return (
-        <div>
-            {propertise.map(p => {
+        <div className="PropertyList">
+            {propertise.map(p => (
                 <Property {...p} key={p.id} />
-            })}
+            ))}
         </div>
     )
 }
