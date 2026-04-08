@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import PropertyList from './PropertyList'
+import Cliker from './Cliker'
 
 function App() {
   const properties = [
@@ -17,8 +18,9 @@ function App() {
 
   return (
     <>
-      <h1>Property List</h1>
-      <PropertyList propertise={properties} />
+      <Cliker />
+      {/* <h1>Property List</h1> */}
+      {/* <PropertyList propertise={properties} /> */}
     </>
   )
 }
