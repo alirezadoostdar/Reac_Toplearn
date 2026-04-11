@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import PropertyList from './PropertyList'
 import Cliker from './Cliker'
+import Form from './Form'
 
 function App() {
   const properties = [
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <>
+      <Form />
       <Cliker />
       {/* <h1>Property List</h1> */}
       {/* <PropertyList propertise={properties} /> */}
