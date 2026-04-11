@@ -1,16 +1,12 @@
-function HandleClick() {
-    console.log("some one click ne")
+function HandleClick(msg) {
+    alert(msg);
 }
 
-function HandleOver() {
-    console.log("Hoverd")
-}
+function Cliker({ message, buttonText }) {
 
-function Cliker() {
     return (
         <div>
-            <p onMouseOver={HandleOver}>click me bitte</p>
-            <button onClick={HandleClick}>click me</button>
+            <button onClick={HandleClick(message)}>{buttonText}</button>
         </div>
     )
 }
