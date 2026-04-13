@@ -6,6 +6,7 @@ import './App.css'
 import PropertyList from './PropertyList'
 import Cliker from './Cliker'
 import Form from './Form'
+import Counter from './Counter'
 
 function App() {
   const properties = [
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+      <Counter />
       {/* <Form /> */}
       {/* <Cliker message={"today is samstag"} buttonText={"please click me"} /> */}
       {/* <h1>Property List</h1> */}
