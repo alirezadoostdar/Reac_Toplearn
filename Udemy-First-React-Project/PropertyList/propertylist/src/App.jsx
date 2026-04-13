@@ -19,8 +19,8 @@ function App() {
 
   return (
     <>
-      <Form />
-      <Cliker message={"today is samstag"} buttonText={"please click me"} />
+      {/* <Form /> */}
+      {/* <Cliker message={"today is samstag"} buttonText={"please click me"} /> */}
       {/* <h1>Property List</h1> */}
       {/* <PropertyList propertise={properties} /> */}
     </>
