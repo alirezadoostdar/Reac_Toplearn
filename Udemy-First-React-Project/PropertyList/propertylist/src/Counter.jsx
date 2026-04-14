@@ -1,10 +1,7 @@
-function Counter() {
-    let num = 0;
-    const increse = () => {
+import { useState } from "react"
 
-        num = num + 1;
-        console.log(num)
-    }
+function Counter() {
+    const [num, setNum] = useState
     return (
         <div>
             <p>the Counter is : {num}</p>
