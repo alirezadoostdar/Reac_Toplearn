@@ -21,8 +21,8 @@ function App() {
 
   return (
     <>
-      <Toggler />
-      {/* <Counter /> */}
+      {/* <Toggler /> */}
+      <Counter />
       {/* <Form /> */}
       {/* <Cliker message={"today is samstag"} buttonText={"please click me"} /> */}
       {/* <h1>Property List</h1> */}
