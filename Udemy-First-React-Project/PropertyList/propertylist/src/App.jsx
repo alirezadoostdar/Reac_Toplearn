@@ -9,6 +9,7 @@ import Form from './Form'
 import Counter from './Counter'
 import Toggler from './Toggler'
 import ColorBox from './ColoBox'
+import ColorBoxGrid from './ColorBoxGrid'
 
 function App() {
   const properties = [
@@ -40,7 +41,8 @@ function App() {
   ];
   return (
     <>
-      <ColorBox />
+      <ColorBoxGrid count={25} colors={colors} />
+      {/* <ColorBox defaultColor={3} colorList={colors} /> */}
       {/* <Toggler /> */}
       {/* <Counter /> */}
       {/* <Form /> */}

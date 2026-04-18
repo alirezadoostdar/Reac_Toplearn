@@ -1,13 +1,15 @@
 import { useState } from "react"
 
-function ColorBox() {
-    const [color, setColor] = useState("#E53935")
+function ColorBox({ defaultColor, colorList }) {
+    const [color, setColor] = useState(colorList[defaultColor])
+    console.log(colorList[defaultColor])
     const changeColor = () => {
-        setColor("#CDDC39")
+        let rnd = Math.floor(Math.random() * colorList.length)
+        setColor(colorList[rnd])
     }
     return (
         <div style={{ backgroundColor: color }}>
-            <p onClick={changeColor}> test</p>
+            <p onClick={changeColor}></p>
         </div>
     )
 }
