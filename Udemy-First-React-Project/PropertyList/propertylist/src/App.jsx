@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <ColorBoxGrid count={25} colors={colors} />
-      {/* <ColorBox defaultColor={3} colorList={colors} /> */}
+      {/* <ColorBox colorList={colors} /> */}
       {/* <Toggler /> */}
       {/* <Counter /> */}
       {/* <Form /> */}
