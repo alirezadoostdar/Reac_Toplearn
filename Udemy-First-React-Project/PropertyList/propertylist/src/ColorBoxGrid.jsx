@@ -1,4 +1,5 @@
 import ColorBox from "./ColoBox";
+import "./ColorBoxGrid.css"
 
 function ColorBoxGrid({ count, colors }) {
     const boxes = [];
@@ -7,7 +8,7 @@ function ColorBoxGrid({ count, colors }) {
     }
     console.log(boxes)
     return (
-        <div>
+        <div className="ColorBoxGrid">
             {boxes}
         </div>
     )
