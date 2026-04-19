@@ -10,6 +10,7 @@ import Counter from './Counter'
 import Toggler from './Toggler'
 import ColorBox from './ColoBox'
 import ColorBoxGrid from './ColorBoxGrid'
+import ScoreKeeper from './ScoreKeeper'
 
 function App() {
   const properties = [
@@ -41,7 +42,8 @@ function App() {
   ];
   return (
     <>
-      <ColorBoxGrid count={25} colors={colors} />
+      <ScoreKeeper />
+      {/* <ColorBoxGrid count={25} colors={colors} /> */}
       {/* <ColorBox colorList={colors} /> */}
       {/* <Toggler /> */}
       {/* <Counter /> */}
