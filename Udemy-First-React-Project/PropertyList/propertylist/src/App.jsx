@@ -2,7 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-
 import PropertyList from './PropertyList'
 import Cliker from './Cliker'
 import Form from './Form'
@@ -11,6 +10,7 @@ import Toggler from './Toggler'
 import ColorBox from './ColoBox'
 import ColorBoxGrid from './ColorBoxGrid'
 import ScoreKeeper from './ScoreKeeper'
+import EmojiClicker from './EmojiClicker'
 
 function App() {
   const properties = [
@@ -42,7 +42,8 @@ function App() {
   ];
   return (
     <>
-      <ScoreKeeper />
+      <EmojiClicker />
+      {/* <ScoreKeeper /> */}
       {/* <ColorBoxGrid count={25} colors={colors} /> */}
       {/* <ColorBox colorList={colors} /> */}
       {/* <Toggler /> */}
