@@ -3,7 +3,7 @@ import { useState } from "react"
 function EmojiClicker() {
     const [emojis, setEmojis] = useState(["😂"])
     const AddEmoji = () => {
-        setEmojis([...emojis, ["😘"]])
+        setEmojis((oldEmojis) => [...oldEmojis, ["😘"]])
     }
     return (
         <div>
