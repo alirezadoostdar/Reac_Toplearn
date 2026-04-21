@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { v4 as uuid } from "uuid"
 
 function ScoreKeeper() {
     const [scores, SetScores] = useState({ p1Score: 0, p2Score: 0 })
