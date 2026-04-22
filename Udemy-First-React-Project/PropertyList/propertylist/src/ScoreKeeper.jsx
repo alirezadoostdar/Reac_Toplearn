@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { v4 as uuid } from "uuid"
 
-function ScoreKeeper() {
-    const [scores, SetScores] = useState({ p1Score: 0, p2Score: 0 })
+function ScoreKeeper({ numPlayer, target }) {
+    const players = new Array[numPlayer]
+    const [scores, SetScores] = useState(players)
     function increaseP1Score() {
         SetScores((oldScore) => {
             return { ...oldScore, p1Score: oldScore.p1Score + 1 }
