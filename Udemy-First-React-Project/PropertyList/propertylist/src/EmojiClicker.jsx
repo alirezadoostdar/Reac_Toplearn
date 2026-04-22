@@ -13,10 +13,18 @@ function EmojiClicker() {
             return oldEmojis.filter(e => e.id !== id)
         })
     }
+    const makeAllThemHeart = () => {
+        setEmojis((prevEmojiIs) => {
+            return prevEmojiIs.map((e) => {
+                return { ...e, emoji: "❤️" }
+            })
+        })
+    }
     return (
         <div>
             {emojis.map((e) => (<span onClick={() => { deleteEmoji(e.id) }} key={e.id} style={{ fontSize: "4rem" }}>{e.emoji}</span>))}
             <button onClick={AddEmoji}>Add Emoji</button>
+            <button onClick={makeAllThemHeart}>Make all them heart</button>
         </div>
     )
 }
