@@ -42,8 +42,8 @@ function App() {
   ];
   return (
     <>
-      <EmojiClicker />
-      {/* <ScoreKeeper /> */}
+      {/* <EmojiClicker /> */}
+      <ScoreKeeper numPlayer={4} target={10} />
       {/* <ColorBoxGrid count={25} colors={colors} /> */}
       {/* <ColorBox colorList={colors} /> */}
       {/* <Toggler /> */}

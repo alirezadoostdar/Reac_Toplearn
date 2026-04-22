@@ -2,7 +2,7 @@ import { useState } from "react"
 import { v4 as uuid } from "uuid"
 
 function ScoreKeeper({ numPlayer, target }) {
-    const players = new Array[numPlayer]
+    const players = new Array(numPlayer).fill(0)
     const [scores, SetScores] = useState(players)
     function increaseP1Score() {
         SetScores((oldScore) => {
@@ -16,10 +16,14 @@ function ScoreKeeper({ numPlayer, target }) {
     }
     return (
         <div>
-            <h2>Player 1 : {scores.p1Score}</h2>
-            <h2>Player 2 : {scores.p2Score}</h2>
-            <button onClick={increaseP1Score}>+1 Player 1</button>
-            <button onClick={increaseP2Score}>+1 Player 2</button>
+            {scores.map((e) => {
+                return (
+                    <div>
+                        <h2>Player </h2>
+                        <button>+1</button>
+                    </div>
+                )
+            })}
         </div>
     )
 }
