@@ -25,7 +25,7 @@ function ScoreKeeper({ numPlayer, target }) {
                         <li>
                             Player{i}:{p}
                             <button onClick={() => increaseScore(i)}>+1</button>
-                            {p === target && <h3>Winner!</h3>}
+                            {p === target && <h3>Winner!!</h3>}
                         </li>
                     )
                 })}
