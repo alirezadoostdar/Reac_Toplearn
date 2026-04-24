@@ -12,6 +12,10 @@ function ScoreKeeper({ numPlayer, target }) {
             })
         })
     }
+
+    const reset = () => {
+        SetScores(new Array(numPlayer).fill(0))
+    }
     return (
         <div>
             <h1>Score Keeper</h1>
@@ -25,6 +29,7 @@ function ScoreKeeper({ numPlayer, target }) {
                     )
                 })}
             </ul>
+            <button onClick={reset} >Reset</button>
         </div>
     )
 }
