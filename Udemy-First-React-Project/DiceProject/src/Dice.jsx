@@ -2,10 +2,8 @@ import Die from "./Die"
 import "./Dice.css"
 
 function Dice({ dice }) {
-    console.log(dice)
     return (
         <section className="Dice">
-
             {dice.map((v, i) => {
                 return <Die key={i} val={v} />
             })}

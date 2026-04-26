@@ -4,13 +4,14 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Die from './Die'
 import Dice from './Dice'
+import LuckyN from './LuckyN'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Dice dice={[4, 2, 6, 6]} />
+      <LuckyN numDice={2} goal={7} />
     </>
   )
 }
