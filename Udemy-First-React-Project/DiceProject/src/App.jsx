@@ -6,12 +6,16 @@ import Die from './Die'
 import Dice from './Dice'
 import LuckyN from './LuckyN'
 
+function isSame(dice) {
+  return dice.every((v) => v === dice[0])
+}
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <LuckyN numDice={2} goal={7} />
+      <LuckyN numDice={2} winCheck={isSame} />
     </>
   )
 }

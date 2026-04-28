@@ -9,13 +9,15 @@ function getRandomDice() {
     return Math.floor(Math.random() * 6) + 1
 }
 
-function LuckyN({ numDice, goal }) {
+function LuckyN({ numDice, winCheck }) {
     console.log(getRandomDice())
     const [dice, setDice] = useState(getRolls(numDice))
-    console.log(dice)
+    const result = winCheck(dice)
+    console.log(result)
     return (
         <main>
             <Dice dice={dice} />
+            {result && <h1>you win</h1>}
         </main>
     )
 }
