@@ -10,14 +10,17 @@ function getRandomDice() {
 }
 
 function LuckyN({ numDice, winCheck }) {
-    console.log(getRandomDice())
     const [dice, setDice] = useState(getRolls(numDice))
     const result = winCheck(dice)
     console.log(result)
+    const reRoll = () => {
+        setDice(getRolls(numDice))
+    }
     return (
         <main>
+            {result && <h3>you win</h3>}
             <Dice dice={dice} />
-            {result && <h1>you win</h1>}
+            <button onClick={reRoll} >Re-roll Dice</button>
         </main>
     )
 }
