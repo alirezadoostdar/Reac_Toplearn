@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Dice from "./Dice"
+import Button from "./Button";
 
 function getRolls(n) {
     return Array.from({ length: n }, () => getRandomDice());
@@ -21,6 +22,7 @@ function LuckyN({ numDice, winCheck }) {
             {result && <h3>you win</h3>}
             <Dice dice={dice} />
             <button onClick={reRoll} >Re-roll Dice</button>
+            {/* <Button /> */}
         </main>
     )
 }
