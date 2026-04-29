@@ -1,7 +1,7 @@
 import "./Button.css"
 
-function Button() {
-    return <Button onclick>Click me</Button>
+function Button({ clickFun }) {
+    return <button className="Button" >Click me</button>
 }
 
 export default Button
