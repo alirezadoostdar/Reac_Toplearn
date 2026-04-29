@@ -22,7 +22,7 @@ function LuckyN({ numDice, winCheck }) {
             {result && <h3>you win</h3>}
             <Dice dice={dice} />
             <button onClick={reRoll} >Re-roll Dice</button>
-            <Button />
+            <Button clickFun={reRoll} />
         </main>
     )
 }
