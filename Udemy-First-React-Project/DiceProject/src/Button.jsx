@@ -1,8 +1,8 @@
 import "./Button.css"
 
-function Button({ clickFun }) {
+function Button({ clickFun, text }) {
     return <button className="Button"
-        onClick={clickFun}>Click me</button>
+        onClick={clickFun}>{text}</button>
 }
 
 export default Button
