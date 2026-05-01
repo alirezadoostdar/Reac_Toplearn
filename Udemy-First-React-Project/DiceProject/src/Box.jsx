@@ -1,13 +1,10 @@
 import { useState } from "react"
 import "./Box.css"
 
-function Box() {
-    const [isActive, setIsActive] = useState(false)
-    const toggleIsActive = () => {
-        setIsActive(!isActive)
-    }
+function Box({ isActive = false, toggleFun }) {
+
     return <div className="Box"
-        onClick={toggleIsActive}
+        onClick={toggleFun}
         style={{ backgroundColor: isActive ? "red" : "black" }}></div>
 }
 
