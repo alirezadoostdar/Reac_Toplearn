@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import Die from './Die'
 import Dice from './Dice'
 import LuckyN from './LuckyN'
+import Box from './Box'
 
 function isSame(dice) {
   return dice.every((v) => v === dice[0])
@@ -15,7 +16,10 @@ function App() {
 
   return (
     <>
-      <LuckyN numDice={2} winCheck={isSame} />
+      {/* <LuckyN numDice={2} winCheck={isSame} /> */}
+      <Box />
+      <Box />
+      <Box />
     </>
   )
 }
