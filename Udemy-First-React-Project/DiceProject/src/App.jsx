@@ -7,6 +7,7 @@ import Dice from './Dice'
 import LuckyN from './LuckyN'
 import Box from './Box'
 import BoxGrid from './BoxGrid'
+import UsernameForm from './UsernameForm'
 
 function isSame(dice) {
   return dice.every((v) => v === dice[0])
@@ -18,7 +19,8 @@ function App() {
   return (
     <>
       {/* <LuckyN numDice={2} winCheck={isSame} /> */}
-      <BoxGrid />
+      {/* <BoxGrid /> */}
+      <UsernameForm />
     </>
   )
 }
