@@ -1,18 +1,48 @@
 import { useState } from "react"
 
 function UsernameForm() {
-    const [userName, setUserName] = useState("")
+    const [userDate, setUserData] = useState(
+        {
+            firstName: "alireza",
+            lastName: "",
+            password: ""
+        });
+
     const updateUserName = (evt) => {
-        setUserName(evt.target.value)
+        const changeField = evt.target.name;
+        console.log(changeField)
+        const newValue = evt.target.value;
+        console.log(newValue);
+        setUserData((curDate) => {
+            curDate[changeField] = newValue
+            return { ...curDate }
+        })
     }
     return (
         <div>
-            <label htmlFor="username">User Name</label>
+            <label htmlFor="firstname">first Name</label>
             <input
-                placeholder="Username"
-                value={userName}
+                placeholder="first name"
+                value={userDate.firstName}
+                name="firstName"
                 onChange={updateUserName}
-                id="username" type="text" />
+                id="firstname" type="text" />
+
+            <label htmlFor="lastname">Last Name</label>
+            <input
+                placeholder="last name"
+                value={userDate.lastName}
+                name="lastName"
+                onChange={updateUserName}
+                id="lastname" type="text" />
+
+            <label htmlFor="password">Password</label>
+            <input
+                placeholder="password"
+                value={userDate.password}
+                name="password"
+                onChange={updateUserName}
+                id="password" type="password" />
             <button>submit</button>
         </div>
     )
