@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function ShoppingListForm() {
+function ShoppingListForm({ addItem }) {
     const [formData, setFormData] = useState({ product: "", quantity: 1 });
 
     const handleFormDate = (evt) => {
@@ -11,8 +11,14 @@ function ShoppingListForm() {
             }
         })
     }
+
+    const submit = (e) => {
+        e.preventDefault();
+        console.log(formData);
+        addItem(formData);
+    }
     return (
-        <form>
+        <form onSubmit={submit}>
             <label htmlFor="product">Product</label>
             <input
                 type="text"
