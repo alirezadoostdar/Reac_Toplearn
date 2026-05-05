@@ -1,6 +1,7 @@
 import { useState } from "react"
 import ShoppingListForm from "./ShoppingListForm";
 
+
 function ShoppingList() {
     const [items, setItems] = useState([
         { id: 1, product: "Banana", quantity: 2 },

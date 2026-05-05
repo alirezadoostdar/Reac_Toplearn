@@ -14,8 +14,8 @@ function ShoppingListForm({ addItem }) {
 
     const submit = (e) => {
         e.preventDefault();
-        console.log(formData);
         addItem(formData);
+        setFormData({ product: "", quantity: 0 })
     }
     return (
         <form onSubmit={submit}>
