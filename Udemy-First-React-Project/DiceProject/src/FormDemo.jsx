@@ -8,7 +8,7 @@ function FormDemo() {
     } = useForm({ mode: "onChange" });
 
     const handleRegistration = (formData) => {
-
+        reg
     }
     return (
         <div>
