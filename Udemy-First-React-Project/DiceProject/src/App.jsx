@@ -10,6 +10,7 @@ import BoxGrid from './BoxGrid'
 import UsernameForm from './UsernameForm'
 import ShoppingListForm from './ShoppingListForm'
 import ShoppingList from './ShoppingList'
+import Counter from './Counter'
 
 function isSame(dice) {
   return dice.every((v) => v === dice[0])
@@ -23,7 +24,8 @@ function App() {
       {/* <LuckyN numDice={2} winCheck={isSame} /> */}
       {/* <BoxGrid /> */}
       {/* <UsernameForm /> */}
-      <ShoppingList />
+      {/* <ShoppingList /> */}
+      <Counter />
     </>
   )
 }
