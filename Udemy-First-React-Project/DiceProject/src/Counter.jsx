@@ -12,7 +12,7 @@ function Counter() {
     }
     useEffect(function myEffect() {
         console.log("my effect runes")
-    })
+    }, [])
     return (
         <div>
             <h1>{count}</h1>
