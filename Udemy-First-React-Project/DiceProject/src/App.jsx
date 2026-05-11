@@ -11,6 +11,8 @@ import UsernameForm from './UsernameForm'
 import ShoppingListForm from './ShoppingListForm'
 import ShoppingList from './ShoppingList'
 import Counter from './Counter'
+import QuoteFetcher from './QuoteFetcher'
+
 
 function isSame(dice) {
   return dice.every((v) => v === dice[0])
@@ -25,7 +27,8 @@ function App() {
       {/* <BoxGrid /> */}
       {/* <UsernameForm /> */}
       {/* <ShoppingList /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <QuoteFetcher />
     </>
   )
 }
