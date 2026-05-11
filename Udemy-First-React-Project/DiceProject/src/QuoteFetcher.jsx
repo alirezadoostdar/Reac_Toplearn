@@ -13,6 +13,7 @@ function QuoteFetcher() {
         }
         fetchInitialQuote();
     }, [])
+
     async function fetchQuote() {
         const response = await fetch(RANDOM_QUOTE_URL);
         const jsonResponse = await response.json();
