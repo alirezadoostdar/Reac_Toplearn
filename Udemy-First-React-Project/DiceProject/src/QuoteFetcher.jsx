@@ -5,13 +5,7 @@ const RANDOM_QUOTE_URL = "https://inspo-quotes-api.herokuapp.com/quotes/random"
 function QuoteFetcher() {
     const [quote, setQuote] = useState({ text: "", author: "" })
     useEffect(() => {
-        async function fetchInitialQuote() {
-            const response = await fetch(RANDOM_QUOTE_URL);
-            const jsonResponse = await response.json();
-            const randomQuote = jsonResponse.quote;
-            setQuote(randomQuote)
-        }
-        fetchInitialQuote();
+        fetchQuote();
     }, [])
 
     async function fetchQuote() {
