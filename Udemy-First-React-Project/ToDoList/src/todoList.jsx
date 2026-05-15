@@ -1,4 +1,4 @@
-import * as React from 'react';
+
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -7,6 +7,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import CommentIcon from '@mui/icons-material/Comment';
+import { useState } from 'react';
 
 
 const initialList = [
@@ -18,11 +19,12 @@ const initialList = [
 
 ]
 
-function todoList() {
+function TodoList() {
+    const [todos, setTodos] = useState(initialList);
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-            {initialList.map((todo) => {
-                const labelId = `checkbox-list-label-${todo.text}`;
+            {todos.map((todo) => {
+                const labelId = `checkbox-list-label-${todo.id}`;
 
                 return (
                     <ListItem
@@ -38,13 +40,13 @@ function todoList() {
                             <ListItemIcon>
                                 <Checkbox
                                     edge="start"
-                                    checked={checked.includes(todo.completed)}
+                                    checked={todo.completed}
                                     tabIndex={-1}
                                     disableRipple
-                                    slotProps={{ input: { 'aria-labelledby': todo.id } }}
+                                    slotProps={{ input: { 'aria-labelledby': labelId } }}
                                 />
                             </ListItemIcon>
-                            <ListItemText id={todo.id} primary={todo.text} />
+                            <ListItemText id={labelId} primary={todo.text} />
                         </ListItemButton>
                     </ListItem>
                 );
@@ -53,4 +55,4 @@ function todoList() {
     )
 }
 
-export default todoList
+export default TodoList
