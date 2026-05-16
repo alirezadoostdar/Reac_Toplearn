@@ -16,7 +16,7 @@ const initialList = [
 function TodoList() {
     const [todos, setTodos] = useState(initialList);
 
-    const removeTodo = (id) => {
+    const remove = (id) => {
         setTodos((prevTodos) => {
             return prevTodos.filter(t => t.id !== id)
         })
@@ -24,7 +24,7 @@ function TodoList() {
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {todos.map((todo) => {
-                return <TodoItem todo={todo} key={todo.id} />;
+                return <TodoItem todo={todo} key={todo.id} remove={remove} />;
             })}
         </List>
     )
