@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import CssBaseline from '@mui/material/CssBaseline'
 import './App.css'
+import TodoList from './TodoList'
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <>
       <CssBaseline />
       <h1>ToDo List</h1>
-      <Todo
+      <TodoList />
     </>
   )
 }
