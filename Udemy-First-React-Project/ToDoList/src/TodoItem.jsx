@@ -6,7 +6,7 @@ import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import CommentIcon from '@mui/icons-material/Comment';
 
-function TodoItem({ todo, remove }) {
+function TodoItem({ todo, remove, toggle }) {
     const labelId = `checkbox-list-label-${todo.id}`;
     const removeTodo = () => {
         remove(todo.id)
@@ -24,6 +24,7 @@ function TodoItem({ todo, remove }) {
                 <ListItemIcon>
                     <Checkbox
                         edge="start"
+                        onChange={toggle}
                         checked={todo.completed}
                         tabIndex={-1}
                         disableRipple
