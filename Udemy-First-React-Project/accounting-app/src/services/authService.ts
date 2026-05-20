@@ -5,7 +5,7 @@ export const authService = {
   login: async (credentials: LoginCredentials): Promise<AuthResponse> => {
     // const response = await apiClient.post<AuthResponse>('/auth/login', credentials)
     // return response.data
-    //for test
+    //for test in real below code must be comment
     if (credentials.username === 'admin' && credentials.password === '1234') {
       return {
         token: 'mock-jwt-token-12345',
