@@ -1,0 +1,123 @@
+{
+  "app": {
+    "name": "أكوفلو",
+    "tagline": "محاسبة ذكية"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "contacts": "جهات الاتصال",
+    "banks": "الحسابات البنكية",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "loginTitle": "مرحباً بعودتك",
+    "loginSubtitle": "تسجيل الدخول إلى لوحة المحاسبة",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "usernamePlaceholder": "أدخل اسم المستخدم",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "loggingIn": "جارٍ تسجيل الدخول...",
+    "loginError": "بيانات اعتماد غير صحيحة. يرجى المحاولة مرة أخرى.",
+    "logoutSuccess": "تم تسجيل خروجك."
+  },
+  "common": {
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "search": "بحث",
+    "loading": "جارٍ التحميل...",
+    "noData": "لا توجد سجلات",
+    "confirm": "تأكيد",
+    "actions": "إجراءات",
+    "status": "الحالة",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "yes": "نعم",
+    "no": "لا",
+    "total": "المجموع",
+    "createdAt": "تاريخ الإنشاء",
+    "updatedAt": "تاريخ التحديث",
+    "required": "هذا الحقل مطلوب",
+    "deleteConfirm": "هل أنت متأكد من حذف هذا السجل؟",
+    "deleteSuccess": "تم حذف السجل بنجاح.",
+    "saveSuccess": "تم حفظ السجل بنجاح.",
+    "errorOccurred": "حدث خطأ. يرجى المحاولة مرة أخرى."
+  },
+  "contact": {
+    "title": "جهات الاتصال",
+    "addContact": "إضافة جهة اتصال",
+    "editContact": "تعديل جهة الاتصال",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "company": "الشركة",
+    "type": "نوع جهة الاتصال",
+    "address": "العنوان",
+    "city": "المدينة",
+    "country": "البلد",
+    "taxId": "الرقم الضريبي",
+    "notes": "ملاحظات",
+    "types": {
+      "customer": "عميل",
+      "supplier": "مورد",
+      "both": "عميل ومورد"
+    },
+    "firstNamePlaceholder": "أدخل الاسم الأول",
+    "lastNamePlaceholder": "أدخل اسم العائلة",
+    "emailPlaceholder": "example@email.com",
+    "phonePlaceholder": "+966 50 123 4567",
+    "companyPlaceholder": "اسم الشركة",
+    "addressPlaceholder": "عنوان الشارع",
+    "cityPlaceholder": "المدينة",
+    "countryPlaceholder": "البلد",
+    "taxIdPlaceholder": "الرقم الضريبي",
+    "notesPlaceholder": "ملاحظات اختيارية...",
+    "invalidEmail": "عنوان البريد الإلكتروني غير صحيح",
+    "invalidPhone": "رقم الهاتف غير صحيح"
+  },
+  "bank": {
+    "title": "الحسابات البنكية",
+    "addBank": "إضافة حساب بنكي",
+    "editBank": "تعديل الحساب البنكي",
+    "name": "اسم البنك",
+    "accountNumber": "رقم الحساب",
+    "iban": "رقم IBAN",
+    "swift": "رمز SWIFT",
+    "currency": "العملة",
+    "branch": "الفرع",
+    "balance": "الرصيد الافتتاحي",
+    "isActive": "حساب نشط",
+    "namePlaceholder": "اسم البنك",
+    "accountNumberPlaceholder": "رقم الحساب",
+    "ibanPlaceholder": "مثال: SA0380000000608010167519",
+    "swiftPlaceholder": "مثال: RIBLSARI",
+    "branchPlaceholder": "اسم الفرع",
+    "balancePlaceholder": "0.00",
+    "invalidAccountNumber": "يجب أن يتكون رقم الحساب من 5 أحرف على الأقل",
+    "invalidBalance": "الرصيد يجب أن يكون رقمًا صحيحًا"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "totalContacts": "إجمالي جهات الاتصال",
+    "totalBanks": "الحسابات البنكية",
+    "customers": "العملاء",
+    "suppliers": "الموردون",
+    "welcome": "مرحباً بك في أكوفلو"
+  },
+  "language": {
+    "select": "اللغة",
+    "en": "English",
+    "fa": "فارسی",
+    "ar": "العربية"
+  },
+  "theme": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "toggle": "تبديل السمة"
+  }
+}

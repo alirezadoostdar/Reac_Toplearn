@@ -1,0 +1,123 @@
+{
+  "app": {
+    "name": "اکوفلو",
+    "tagline": "حسابداری هوشمند"
+  },
+  "nav": {
+    "dashboard": "داشبورد",
+    "contacts": "مخاطبین",
+    "banks": "حساب‌های بانکی",
+    "settings": "تنظیمات",
+    "logout": "خروج"
+  },
+  "auth": {
+    "login": "ورود",
+    "loginTitle": "خوش آمدید",
+    "loginSubtitle": "برای ورود به داشبورد حسابداری وارد شوید",
+    "username": "نام کاربری",
+    "password": "رمز عبور",
+    "usernamePlaceholder": "نام کاربری خود را وارد کنید",
+    "passwordPlaceholder": "رمز عبور خود را وارد کنید",
+    "loggingIn": "در حال ورود...",
+    "loginError": "اطلاعات نادرست است. دوباره تلاش کنید.",
+    "logoutSuccess": "از حساب خارج شدید."
+  },
+  "common": {
+    "add": "افزودن",
+    "edit": "ویرایش",
+    "delete": "حذف",
+    "save": "ذخیره",
+    "cancel": "انصراف",
+    "search": "جستجو",
+    "loading": "در حال بارگذاری...",
+    "noData": "رکوردی یافت نشد",
+    "confirm": "تأیید",
+    "actions": "عملیات",
+    "status": "وضعیت",
+    "active": "فعال",
+    "inactive": "غیرفعال",
+    "yes": "بله",
+    "no": "خیر",
+    "total": "مجموع",
+    "createdAt": "تاریخ ایجاد",
+    "updatedAt": "تاریخ بروزرسانی",
+    "required": "این فیلد الزامی است",
+    "deleteConfirm": "آیا از حذف این رکورد اطمینان دارید؟",
+    "deleteSuccess": "رکورد با موفقیت حذف شد.",
+    "saveSuccess": "رکورد با موفقیت ذخیره شد.",
+    "errorOccurred": "خطایی رخ داد. دوباره تلاش کنید."
+  },
+  "contact": {
+    "title": "مخاطبین",
+    "addContact": "افزودن مخاطب",
+    "editContact": "ویرایش مخاطب",
+    "firstName": "نام",
+    "lastName": "نام خانوادگی",
+    "email": "آدرس ایمیل",
+    "phone": "شماره تلفن",
+    "company": "شرکت",
+    "type": "نوع مخاطب",
+    "address": "آدرس",
+    "city": "شهر",
+    "country": "کشور",
+    "taxId": "شناسه مالیاتی",
+    "notes": "یادداشت",
+    "types": {
+      "customer": "مشتری",
+      "supplier": "تأمین‌کننده",
+      "both": "مشتری و تأمین‌کننده"
+    },
+    "firstNamePlaceholder": "نام را وارد کنید",
+    "lastNamePlaceholder": "نام خانوادگی را وارد کنید",
+    "emailPlaceholder": "example@email.com",
+    "phonePlaceholder": "+98 912 345 6789",
+    "companyPlaceholder": "نام شرکت",
+    "addressPlaceholder": "آدرس خیابان",
+    "cityPlaceholder": "شهر",
+    "countryPlaceholder": "کشور",
+    "taxIdPlaceholder": "شناسه مالیاتی",
+    "notesPlaceholder": "یادداشت اختیاری...",
+    "invalidEmail": "آدرس ایمیل نادرست است",
+    "invalidPhone": "شماره تلفن نادرست است"
+  },
+  "bank": {
+    "title": "حساب‌های بانکی",
+    "addBank": "افزودن حساب بانکی",
+    "editBank": "ویرایش حساب بانکی",
+    "name": "نام بانک",
+    "accountNumber": "شماره حساب",
+    "iban": "شبا",
+    "swift": "کد سوئیفت",
+    "currency": "واحد پول",
+    "branch": "شعبه",
+    "balance": "موجودی اولیه",
+    "isActive": "حساب فعال",
+    "namePlaceholder": "نام بانک",
+    "accountNumberPlaceholder": "شماره حساب",
+    "ibanPlaceholder": "مثال: IR062960000000100324200001",
+    "swiftPlaceholder": "مثال: MELIIR22",
+    "branchPlaceholder": "نام شعبه",
+    "balancePlaceholder": "۰.۰۰",
+    "invalidAccountNumber": "شماره حساب باید حداقل ۵ کاراکتر باشد",
+    "invalidBalance": "موجودی باید یک عدد معتبر باشد"
+  },
+  "dashboard": {
+    "title": "داشبورد",
+    "totalContacts": "مجموع مخاطبین",
+    "totalBanks": "حساب‌های بانکی",
+    "customers": "مشتریان",
+    "suppliers": "تأمین‌کنندگان",
+    "welcome": "خوش آمدید به اکوفلو"
+  },
+  "language": {
+    "select": "زبان",
+    "en": "English",
+    "fa": "فارسی",
+    "ar": "العربية"
+  },
+  "theme": {
+    "light": "روشن",
+    "dark": "تیره",
+    "toggle": "تغییر تم"
+  }
+}
